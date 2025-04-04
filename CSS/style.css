@@ -16,7 +16,7 @@ body::before {
   background: rgb(255, 255, 255);
   position: absolute;
   top: 0;
-  left: 600px;
+  left: -600px;
   transform: rotate(-70deg);
   width: 100%;
   height: 120%;
@@ -24,19 +24,21 @@ body::before {
 
 /* Colocando uma Marca Dágua */
 body::after {
-  content: "CodeBy Ryan";
-  color: rgb(0, 0, 0);
+  content: "CodeByRyan";
+  color: rgb(48, 48, 48);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 135px;
+  font-size: 115px;
   font-weight: bold;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .Menu img {
   width: 80px;
+  position: relative;
+  z-index: 2;
 }
 
 h4 {
@@ -76,8 +78,36 @@ p {
   justify-content: space-between; /* Alinha na horizontal */
   align-items: center; /* Alinha na Vertical */
   height: 75%; /* Colocando no centro */
+  position: relative;
+  z-index: 1;
 }
 
 .Caixa-Texto {
   max-width: 500px;
+}
+
+.caixa-botão {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 20px;
+}
+
+.botão {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.laranja {
+  background: rgb(255, 145, 0);
+}
+
+.azul {
+  background: rgb(0, 174, 255);
+}
+
+.vermelho {
+  background: rgb(255, 0, 43);
 }
