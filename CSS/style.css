@@ -7,6 +7,7 @@ body {
   height: 100vh;
   font-family: "Righteous", sans-serif;
   overflow: hidden;
+  /* O  que fazer com oq sobra?*/
 }
 
 /*After ( Antes) , before ( Depois ) */
@@ -71,6 +72,13 @@ p {
 .img-Camera {
   transform: rotate(-25deg);
   width: 800px;
+  filter: drop-shadow(30px 45px 40px #161616);
+  transition: 1s;
+}
+
+.troca-efeito {
+  opacity: 0;
+  transform: rotate(-25deg) translateY(-30px);
 }
 
 .Caixa-Principal {
